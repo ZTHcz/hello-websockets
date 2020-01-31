@@ -8,5 +8,23 @@
 </head>
 <body>
     <h1>Hello Express!</h1>
+    <pre id="log">
+    </pre>
+    <input name="message"/>
+    <button id="sendMessage">Send Chat Message</button>
+    <script>
+        const ws = new WebSocket('ws://localhost:8080');
+        const button = document.querySelector('#sendMessage');
+        const message = document.querySelector('[name="message]"');
+        const log = document.querySelector('#log');
+
+        button.addEventListener('click',function(){
+            ws.send(message.value);
+            message.value = '';
+        });
+        ws.addEventListener('message',function(event){
+            log.innerHTML += event.data;
+        });
+    </script>
 </body>
 </html>
