@@ -1,0 +1,26 @@
+{
+  "name": "hello-websockets",
+  "version": "1.0.0",
+  "description": "another change :)",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "url": "^0.11.0",
+    "ws": "^7.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CommanderMouse/hello-websockets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CommanderMouse/hello-websockets/issues"
+  },
+  "homepage": "https://github.com/CommanderMouse/hello-websockets#readme"
+}
